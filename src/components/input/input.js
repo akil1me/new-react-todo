@@ -1,5 +1,5 @@
-export default function Input({ value, setValue }) {
+export default function Input({ inputRef }) {
   return (
-    <input className="form-control" type="text" value={value} onChange={(e) => setValue(e.target.value)} required />
+    <input className="form-control" type="text" ref={inputRef} required />
   )
 }

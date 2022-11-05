@@ -2,7 +2,7 @@ import Button from "../button/button"
 import Input from "../input/input"
 import SectionTitle from "../section-title/sectionTitle"
 
-export const AddTodo = ({ value, setValue, handleSubmit }) => {
+export const AddTodo = ({ inputRef, handleSubmit }) => {
 
 
 
@@ -13,7 +13,7 @@ export const AddTodo = ({ value, setValue, handleSubmit }) => {
       </SectionTitle>
 
       <form className="d-flex" onSubmit={handleSubmit}>
-        <Input setValue={setValue} value={value} />
+        <Input inputRef={inputRef} />
         <Button>
           Add
         </Button>

@@ -3,7 +3,7 @@ import TodoItem from "../todo-item/todoItem";
 
 import "./todoList.css"
 
-export default function TodoList({ todo, handleDeleteTodo, hendleChecked, hendleCheckedDelete }) {
+export default function TodoList({ todo, handleDeleteTodo, hendleChecked, hendleCheckedDelete, hendleEtide }) {
   return (
     <div className="mt-5">
       <SectionTitle>
@@ -13,7 +13,7 @@ export default function TodoList({ todo, handleDeleteTodo, hendleChecked, hendle
       <ul className="todo-list  mt-4">
         {
           todo.map(item => (
-            <TodoItem  {...item} key={item.id} handleDeleteTodo={handleDeleteTodo} hendleChecked={hendleChecked} />))
+            <TodoItem  {...item} key={item.id} handleDeleteTodo={handleDeleteTodo} hendleChecked={hendleChecked} hendleEtide={hendleEtide} />))
         }
       </ul>
 
